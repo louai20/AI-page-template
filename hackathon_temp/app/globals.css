@@ -1,26 +1,84 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --color-base-surface-primary: #FAFAFA;
+  --color-base-surface-secondary: #F5F5F4;
+  --color-base-surface-tertiary: #F0EFEE;
+  --color-base-surface-subtle: #FAFAFA;
+  --color-base-onSurface-primary: #1A1A1A;
+  --color-base-onSurface-secondary: #424040;
+  --color-inverse-surface-primary: #1A1A1A;
+  --color-inverse-onSurface-primary: #FAFAFA;
+  --color-campaign-surface-primary: #BDEC00;
+  --color-campaign-surface-primarySubdued: #DFE1FB;
+  --color-campaign-onSurface-primary: #1A1A1A;
+  --color-campaign-onSurface-primarySubdued: #1A1A1A;
+  --color-accent-surface-primary: #2A3E2E;
+  --color-accent-surface-primarySubdued: #E0F685;
+  --color-accent-surface-secondary: #292435;
+  --color-accent-surface-secondarySubdued: #ACAFF4;
+  --color-accent-surface-tertiary: #361719;
+  --color-accent-surface-tertiarySubdued: #F8D3B8;
+  --color-accent-surface-brand: #292435;
+  --color-accent-onSurface-primary: #BDEC00;
+  --color-accent-onSurface-primarySubdued: #2A3E2E;
+  --color-accent-onSurface-secondary: #ACAFF4;
+  --color-accent-onSurface-secondarySubdued: #292435;
+  --color-accent-onSurface-tertiary: #F8D3B8;
+  --color-accent-onSurface-tertiarySubdued: #361719;
+  --color-accent-onSurface-brand: #FAFAFA;
+  --color-feedback-info: #0A34C6;
+  --color-feedback-infoSubdued: #E0E8FF;
+  --color-feedback-success: #2E6E3B;
+  --color-feedback-successSubdued: #CCF4D5;
+  --color-feedback-warning: #B97809;
+  --color-feedback-warningSubdued: #F9E5C3;
+  --color-feedback-danger: #C41821;
+  --color-feedback-dangerSubdued: #FFD1D4;
+  --color-interface-iconStyle: regular-sharp;
+  --color-interface-border: #C3C1BF;
+  --color-interface-borderHover: #747371;
+  --color-interface-divider: #DBDAD8;
+  --color-interface-disabled: #DBDAD8;
+  --color-interface-onDisabled: #747371;
+  --color-interface-selectedPrimary: #292435;
+  --color-interface-selectedSecondary: #F0EFEE;
+  --color-opacity-transparent: #FFFFFF;
+  --color-opacity-hover: #1A1A1A;
+  --color-opacity-pressed: #1A1A1A;
+  --color-opacity-overlay: #1A1A1A;
+  --color-opacity-onPressed: #1A1A1A;
+  --color-opacity-onHover: #1A1A1A;
+  --color-opacity-dark-small: #1A1A1A;
+  --color-opacity-dark-medium: #1A1A1A;
+  --color-opacity-dark-large: #1A1A1A;
+  --color-opacity-light-small: #FAFAFA;
+  --color-opacity-light-medium: #FAFAFA;
+  --color-opacity-light-large: #FAFAFA;
+  --color-specific-onImage-gradientA: #1A1A1A;
+  --color-specific-onImage-gradientB: #1A1A1A;
+  --color-specific-onImage-gradientC: #FAFAFA;
+  --color-specific-onImage-gradientD: #FAFAFA;
+  --color-specific-onImage-onSurfaceImageDark: #FAFAFA;
+  --color-specific-onImage-onSurfaceImageLight: #1A1A1A;
+  --color-specific-onImage-onSurfaceImageCampaign: #BDEC00;
+  --color-specific-onBrutalist-onSurfaceBrutalist: #1A1A1A;
+  --color-specific-marketingBanner-marketingBannerSurface: #DFE1FB;
+  --color-specific-input-inputSurface: #F0EFEE;
+  --color-specific-input-inputSurfaceLocked: #E3E2E0;
+  --color-specific-input-inputBorder: #747371;
+  --color-specific-toggle-toggleSurface: #C3C1BF;
+  --color-specific-toggle-toggleSelector: #FAFAFA;
+  --color-specific-modal-modalSurface: #FAFAFA;
+  --color-specific-navigation-headerSurface: #FAFAFA;
+  --color-specific-navigation-headerSurfaceSecondary: #F0EFEE;
+  --color-specific-navigation-headerSurfaceSecondaryGradient: #F0EFEE;
+  --color-specific-navigation-onHeaderSurface: #1A1A1A;
+  --color-specific-navigation-onHeaderSurfaceSecondary: #1A1A1A;
+  --color-specific-navigation-headerNotificationSurface: #4624EC;
+  --color-specific-navigation-onHeaderNotificationSurface: #FAFAFA;
+  --color-specific-navigation-footerSurface: #1A1A1A;
+  --color-specific-navigation-onFooterSurface: #FAFAFA;
+  --color-specific-subscriptionCard-SubscriptionCardSurface: #F0EFEE;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
