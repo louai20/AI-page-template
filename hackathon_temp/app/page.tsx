@@ -42,7 +42,7 @@ export default function Page() {
 
 function Hero({ Device, Variant, Width, Badge, Heading, Body, CTAs, Price, USPs, Countdown }) {
   return (
-    <section className="relative bg-base-surface-primary py-16">
+    <section className="relative bg-base-surface-primary py-16" aria-labelledby="hero-heading">
       <div className={`mx-auto ${Width === "Standard" ? "max-w-[1440px]" : "max-w-[952px]"} px-4`}>
         <div className="flex items-center gap-12">
           <div className="flex-1">
@@ -53,7 +53,7 @@ function Hero({ Device, Variant, Width, Badge, Heading, Body, CTAs, Price, USPs,
             )}
             
             {Heading && (
-              <h1 className="font-primary text-5xl mb-6 text-base-onSurface-primary">
+              <h1 id="hero-heading" className="font-primary text-5xl mb-6 text-base-onSurface-primary">
                 Experience Lightning-Fast 5G
               </h1>
             )}
@@ -93,7 +93,7 @@ function Hero({ Device, Variant, Width, Badge, Heading, Body, CTAs, Price, USPs,
 
 function SubscriptionCard({ Device, Highlight, Price_config, Heading, Badge, Binding_status, Feature_list, Logotypes, Image }) {
   return (
-    <div className={`rounded-xl p-8 ${Highlight === "Yes" ? "bg-accent-surface-brand" : "bg-base-surface-secondary"}`}>
+    <article className={`rounded-xl p-8 ${Highlight === "Yes" ? "bg-accent-surface-brand" : "bg-base-surface-secondary"}`} aria-labelledby="subscription-heading">
       {Badge && (
         <span className="inline-block mb-4 px-3 py-1 bg-accent-surface-primary text-accent-onSurface-primary rounded-full text-sm font-secondary">
           Most Popular
@@ -101,7 +101,7 @@ function SubscriptionCard({ Device, Highlight, Price_config, Heading, Badge, Bin
       )}
       
       {Heading && (
-        <h2 className="font-primary text-3xl mb-4 text-base-onSurface-primary">
+        <h2 id="subscription-heading" className="font-primary text-3xl mb-4 text-base-onSurface-primary">
           Unlimited 5G
         </h2>
       )}
@@ -143,15 +143,15 @@ function SubscriptionCard({ Device, Highlight, Price_config, Heading, Badge, Bin
       <button type="button" className="w-full py-4 bg-accent-surface-primary text-accent-onSurface-primary rounded-lg font-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
         Choose Plan
       </button>
-    </div>
+    </article>
   )
 }
 
 function FAQBlock_Default({ Heading, Body, Button, Chips }) {
   return (
-    <section className="bg-base-surface-primary p-8 rounded-xl">
+    <section className="bg-base-surface-primary p-8 rounded-xl" aria-labelledby="faq-heading">
       {Heading && (
-        <h2 className="font-primary text-3xl mb-8 text-base-onSurface-primary">
+        <h2 id="faq-heading" className="font-primary text-3xl mb-8 text-base-onSurface-primary">
           Frequently Asked Questions
         </h2>
       )}
